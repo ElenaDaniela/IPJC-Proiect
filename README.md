@@ -1,2 +1,2 @@
 # IPJC-Proiect
-Proiect pentru Introducere in Programarea Jocurilor pe Calculator. :)
+Proiect pentru Introducere in Programarea Jocurilor pe Calculator.
