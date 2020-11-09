@@ -99,7 +99,11 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LightingSettings: {fileID: 0}
+=======
+  m_LightingSettings: {fileID: 1729114591}
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
 =======
   m_LightingSettings: {fileID: 1729114591}
 >>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
@@ -479,6 +483,9 @@ Transform:
 =======
   m_Father: {fileID: 1692571357}
   m_RootOrder: 80
+<<<<<<< HEAD
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
+=======
 >>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &106956745
@@ -1497,7 +1504,10 @@ PrefabInstance:
       value: Torch (1)
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
     - target: {fileID: 295997827497236377, guid: ef00fa601dcf518408d0cc6f03597c2b, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -1567,8 +1577,11 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &302952144 stripped
 Transform:
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
 =======
+=======
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
   m_CorrespondingSourceObject: {fileID: 8943358482550141968, guid: ef00fa601dcf518408d0cc6f03597c2b, type: 3}
 >>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
   m_PrefabInstance: {fileID: 302952142}
@@ -1822,9 +1835,14 @@ Transform:
 --- !u!4 &355566301
 Transform:
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+=======
+  m_CorrespondingSourceObject: {fileID: 4400492943477136568, guid: d9ca5f46933c2dd4bb08a3fe7b820018, type: 3}
+  m_PrefabInstance: {fileID: 4400492943696256613}
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
 =======
   m_CorrespondingSourceObject: {fileID: 4400492943477136568, guid: d9ca5f46933c2dd4bb08a3fe7b820018, type: 3}
   m_PrefabInstance: {fileID: 4400492943696256613}
@@ -5385,8 +5403,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_AllTileFlags: 1073741824
 =======
+=======
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
       m_AllTileFlags: 1073741825
 >>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
   m_AnimatedTiles: {}
@@ -6167,7 +6188,10 @@ PrefabInstance:
       value: PF FX Campfire Fire
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
     - target: {fileID: 1400517151494326, guid: 2b206c0d2afb3604183d9210be1d84ce, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -7190,8 +7214,11 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Sprite: {fileID: 0}
 =======
+=======
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
   m_Sprite: {fileID: 21300102, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
 >>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11889,6 +11916,7 @@ Transform:
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1865664075
 GameObject:
   m_ObjectHideFlags: 0
@@ -11919,6 +11947,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
 =======
 >>>>>>> parent of ae1ee41... Merge branch 'main' into Popi's-Work
 --- !u!1 &1876193151
