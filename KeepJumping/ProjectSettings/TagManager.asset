@@ -13,10 +13,17 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - TileMap
   - Character
   - Background
   - Props
+=======
+  - 
+  - 
+  - 
+  - 
+>>>>>>> parent of 7faef89... Merge branch 'main' into Popi's-Work
   - 
   - 
   - 
@@ -39,10 +46,7 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 872232727
-    locked: 0
-  - name: TileMap
-    uniqueID: 543731367
+    uniqueID: 2158020569
     locked: 0
   - name: Default
     uniqueID: 0
