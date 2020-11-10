@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,11 +12,13 @@ public class CharacterMovement : MonoBehaviour
     private float jumpForce = 0f;
     private System.DateTime jumpTime = System.DateTime.Now;
     private bool chargingJump = false;
+    
 
     // Update is called once per frame
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        
         if (Input.GetButtonDown("Jump"))
         {
             jumpTime = System.DateTime.Now;
