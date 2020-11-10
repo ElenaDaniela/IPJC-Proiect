@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - TileMap
+  - Character
+  - Background
+  - Props
+  - TileMap Background
+  - Props In Front
+  - Props With Collider
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 872232727
+    locked: 0
+  - name: TileMap Background
+    uniqueID: 2583631245
+    locked: 0
+  - name: TileMap Main
+    uniqueID: 543731367
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
