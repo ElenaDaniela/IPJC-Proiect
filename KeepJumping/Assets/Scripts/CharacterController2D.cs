@@ -6,17 +6,16 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
 	public PhysicsMaterial2D bounceMat, normalMat; // materialele
-	private CircleCollider2D cc;
+	private CircleCollider2D m_CircleColider2D;
 	
 	[SerializeField] private float m_JumpForce = 650f;                          // Amount of force added when the player jumps
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping
 	[SerializeField] private bool m_HorizontalControl = false;                  // Whether or not a player can move horizontally
-	[Range(0f, 1f)] [SerializeField] private float m_HorizontalModifier = 0.5f;
+	[Range(0f, 1f)] [SerializeField] private float m_HorizontalModifier = 0.75f;
 	[SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
-	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded                        // A position marking where to check for ceilings
+	[SerializeField] private BoxCollider2D m_GroundCheck;                       // A position marking where to check if the player is grounded
 
-	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing
@@ -30,7 +29,7 @@ public class CharacterController2D : MonoBehaviour
 	private void Awake()
 	{
 		
-		cc = gameObject.GetComponent<CircleCollider2D>();
+		m_CircleColider2D = gameObject.GetComponent<CircleCollider2D>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
 		if (OnLandEvent == null)
@@ -41,19 +40,18 @@ public class CharacterController2D : MonoBehaviour
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
-		
-
+		m_CircleColider2D.sharedMaterial = bounceMat;
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
-		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+		Collider2D[] colliders = Physics2D.OverlapBoxAll(m_GroundCheck.bounds.center, m_GroundCheck.size, m_WhatIsGround);
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
 				//devine rough
-				cc.sharedMaterial = normalMat;
-				
+				m_CircleColider2D.sharedMaterial = normalMat;
+
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -85,7 +83,7 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			// devine bouncy
-			cc.sharedMaterial = bounceMat;
+			m_CircleColider2D.sharedMaterial = bounceMat;
 			
 			m_Rigidbody2D.AddForce(new Vector2( move * m_JumpForce * jump * m_HorizontalModifier , m_JumpForce * jump));
 		}
