@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - TileMap
+  - Character
+  - Background
+  - Props
   - 
   - 
   - 
@@ -39,7 +39,10 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 2158020569
+    uniqueID: 872232727
+    locked: 0
+  - name: TileMap
+    uniqueID: 543731367
     locked: 0
   - name: Default
     uniqueID: 0
