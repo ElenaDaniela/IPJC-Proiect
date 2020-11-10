@@ -4470,7 +4470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885883571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a16f3c7a99ac8c54bab98ae31f120fbb, type: 3}
   m_Name: 
@@ -11363,6 +11363,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: d20b73842dd8906448e31a4bb54f28a6, type: 2}
+    - target: {fileID: 8245262281050766348, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
+      propertyPath: m_Size.x
+      value: 0.69
+      objectReference: {fileID: 0}
     - target: {fileID: 8245262281050766349, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
       propertyPath: m_Radius
       value: 0.4
@@ -11381,12 +11385,20 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 27a1c4ae86cd8464a90584086cfb1c42, type: 2}
     - target: {fileID: 8245262281050766350, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8245262281050766350, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
       propertyPath: normalMat
       value: 
       objectReference: {fileID: 6200000, guid: a7cea309e342f4c42b377c6a23de4b57, type: 2}
+    - target: {fileID: 8245262281050766351, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
+      propertyPath: bounceMat
+      value: 
+      objectReference: {fileID: 6200000, guid: 27a1c4ae86cd8464a90584086cfb1c42, type: 2}
+    - target: {fileID: 8245262281050766351, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
+      propertyPath: normalMat
+      value: 
+      objectReference: {fileID: 6200000, guid: d20b73842dd8906448e31a4bb54f28a6, type: 2}
     - target: {fileID: 8245262281050766351, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
       propertyPath: m_AirControl
       value: 0
@@ -11394,6 +11406,10 @@ PrefabInstance:
     - target: {fileID: 8245262281050766351, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
       propertyPath: m_HorizontalControl
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245262281050766351, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 18688
       objectReference: {fileID: 0}
     - target: {fileID: 8245262281050766449, guid: 6dae1ffcbdefc8d4fa64325dce8210f0, type: 3}
       propertyPath: m_Name
