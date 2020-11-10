@@ -3,6 +3,7 @@
 public class CameraFollow : MonoBehaviour
 {
     
+    [SerializeField]
     private Transform playerTransform;
     [SerializeField]
     private float leftLimit;
